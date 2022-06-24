@@ -42,11 +42,55 @@ main.template {
   position: relative;
   width: 100%;
   height: 100vh;
+  padding-top: 6em;
   top: 0;
   left: 0;
   background: #dddd;
 }
 
+.jumbotron-container-home .c-jumbotron-home {
+  border: 1px solid red;
+  padding: 0.5em 0;
+}
+
+.jumbotron-container-home .img-jumbotron-home {
+  border: 1px solid cyan;
+  display: grid;
+  place-items: center;
+}
+.img-jumbotron-home .img-profile-jumbotron-home {
+  width: 300px;
+  height: 300px;
+
+  padding: 1em;
+}
+.img-profile-jumbotron-home img::selection {
+  color: none;
+}
+.img-profile-jumbotron-home img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.c-jumbotron-home .nama-profile {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 3em;
+}
+.c-jumbotron-home .nama-profesi {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.5em;
+}
+.c-jumbotron-home .social-media {
+  position: relative;
+  border: 1px solid cyan;
+  width: 100%;
+  padding: 0.5em;
+}
 /*  -----------------------------------------------------------------------------------------------------------------------
   
     code untuk bagian jumbotron container home
