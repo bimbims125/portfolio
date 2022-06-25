@@ -49,12 +49,12 @@ main.template {
 }
 
 .jumbotron-container-home .c-jumbotron-home {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 0.5em 0;
 }
 
 .jumbotron-container-home .img-jumbotron-home {
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
   display: grid;
   place-items: center;
 }
@@ -87,9 +87,18 @@ main.template {
 }
 .c-jumbotron-home .social-media {
   position: relative;
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
   width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  align-items: center;
   padding: 0.5em;
+  font-size: 2em;
+}
+.social-media a {
+  color: inherit;
+  text-decoration: none;
 }
 /*  -----------------------------------------------------------------------------------------------------------------------
   
@@ -108,4 +117,14 @@ main.template {
   }
 }
 
-/* ned code for media < 1000px  */
+/* end code for media < 1000px  */
+
+/* MEDIA FOR MAX-HEIGHT 690PX */
+
+@media screen and (max-height: 620px) {
+  .jumbotron-container-home {
+    height: auto;
+  }
+}
+
+/*END  MEDIA FOR MAX-HEIGHT 690PX */
