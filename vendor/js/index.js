@@ -82,7 +82,7 @@ navbar_nav.addEventListener('click',function(e){
    
         })
         e.target.classList.add('active')
-        let section = ``
+      
         if(e.target.textContent === 'Home'){
             pageHome()
         }
