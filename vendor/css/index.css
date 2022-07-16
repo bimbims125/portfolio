@@ -243,6 +243,72 @@ span.lama {
   
 -----------------------------------------------------------------------------------------------------------------------*/
 
+/* 
+
+
+/*  -----------------------------------------------------------------------------------------------------------------------
+  
+     code untuk bagian jumbotron home container jumbotron animate loading
+  
+-----------------------------------------------------------------------------------------------------------------------*/
+
+.jumbotron-container-home .jumbotron-animate-loading {
+  padding: 0.5em;
+  height: 450px;
+  border: 1px solid red;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.jumbotron-animate-loading .loading {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: grid;
+  background: #fff;
+  place-items: center;
+  padding: 0.4em;
+  animation: loading 0.9s linear infinite;
+  /* border: 1px solid cyan; */
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading::before {
+  content: ' ';
+  z-index: 2;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background: #ddd;
+  border-radius: 50%;
+  opacity: 1;
+}
+.loading::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: conic-gradient(#2b2b2b 10%, transparent 10%, transparent 50%);
+  z-index: 1;
+  border-radius: 50%;
+}
+
+/*  -----------------------------------------------------------------------------------------------------------------------
+  
+    end code untuk bagian jumbotron home container jumbotron animate loading
+  
+  
+-----------------------------------------------------------------------------------------------------------------------*/
+
 /* -----------------------------------------------------------------------------------------------------------------------
   
     end code untuk bagian jumbotron container home

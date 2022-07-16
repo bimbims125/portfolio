@@ -114,7 +114,7 @@ function pageSkill(){
  return jumbotron_container_home.innerHTML = data_project;
 }
 
-pageHome()
+// pageHome()
 
 navbar_nav.addEventListener('click',function(e){
     if(e.target.classList.contains('nav-link')){
