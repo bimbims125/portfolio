@@ -68,8 +68,53 @@ function pageProject(){
 
   return jumbotron_container_home.innerHTML = data_project;
 }
+function pageSkill(){
+  let data_project = ` <div class="container c-jumbotron-skill container-content" aria-label="container-skill" data-page="skill">
+  <div class="skill-template">
+    <div class="card card-skill">
+      <div class="card-body-skill">
+        <div class="card-desc">
+          <img src="vendor/img/python.jpg" alt="" class="img-desc">
+          <h5 class="card-text">Python</h5>
+          <span class="pengalaman"><span class="lama">2 year</span> of experience</span>
+        </div>
+      </div>
+    </div>
+    <div class="card card-skill">
+      <div class="card-body-skill">
+        <div class="card-desc">
+          <img src="vendor/img/django.jpg" alt="" class="img-desc">
+          <h5 class="card-text">Django</h5>
+          <span class="pengalaman"><span class="lama">1 year</span> of experience</span>
+        </div>
+      </div>
+    </div>
+    <div class="card card-skill">
+      <div class="card-body-skill">
+        <div class="card-desc">
+          <img src="vendor/img/database.png" alt="" class="img-desc s">
+          <h5 class="card-text">Mysql</h5>
+          <span class="pengalaman"><span class="lama">7 month</span> of experience</span>
+        </div>
+      </div>
+    </div>
+    <div class="card card-skill">
+      <div class="card-body-skill">
+        <div class="card-desc">
+          <img src="vendor/img/git.jpg" alt="" class="img-desc">
+          <h5 class="card-text">Git</h5>
+          <span class="pengalaman"><span class="lama">7 month</span> of experience</span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>`
 
-// pageHome()
+ return jumbotron_container_home.innerHTML = data_project;
+}
+
+pageHome()
 
 navbar_nav.addEventListener('click',function(e){
     if(e.target.classList.contains('nav-link')){
@@ -88,6 +133,9 @@ navbar_nav.addEventListener('click',function(e){
         }
          if(e.target.textContent === 'project'){
           pageProject()
+        }
+        if(e.target.textContent === 'skill'){
+          pageSkill()
         }
        
     e.preventDefault()
