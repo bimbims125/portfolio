@@ -114,7 +114,17 @@ function pageSkill(){
  return jumbotron_container_home.innerHTML = data_project;
 }
 
-// pageHome()
+function pageLoading(){
+  let data_project_loading =` <div class="container jumbotron-animate-loading">
+                                <div class="loading">
+                                  
+                                </div>
+                              </div>`
+                              
+   return jumbotron_container_home.innerHTML = data_project_loading;
+}
+
+pageHome()
 
 navbar_nav.addEventListener('click',function(e){
     if(e.target.classList.contains('nav-link')){
@@ -129,13 +139,26 @@ navbar_nav.addEventListener('click',function(e){
         e.target.classList.add('active')
       
         if(e.target.textContent === 'Home'){
+          pageLoading()
+          setTimeout(() => {
             pageHome()
+          }, 500);
+          
         }
          if(e.target.textContent === 'project'){
-          pageProject()
+   
+          pageLoading()
+          setTimeout(() => {
+            pageProject()
+          }, 500);
         }
         if(e.target.textContent === 'skill'){
-          pageSkill()
+      
+          pageLoading()
+          setTimeout(() => {
+            pageSkill()
+          }, 500);
+        
         }
        
     e.preventDefault()

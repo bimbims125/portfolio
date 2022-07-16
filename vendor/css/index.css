@@ -255,7 +255,6 @@ span.lama {
 .jumbotron-container-home .jumbotron-animate-loading {
   padding: 0.5em;
   height: 450px;
-  border: 1px solid red;
   position: relative;
   display: grid;
   place-items: center;
