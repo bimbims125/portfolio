@@ -20,7 +20,6 @@ main.template {
      -----------------------------------------------------------------------------------------------------------------------*/
 
 .navbar-nav {
-  /* border: 1px solid red; */
   gap: 5em;
   font-size: 1.5em;
   text-transform: capitalize;
@@ -46,17 +45,16 @@ main.template {
   display: grid;
   place-items: center;
   left: 0;
-  background: #dddd;
+  background: #ddd;
+  transition: 0.6s;
 }
 
 .jumbotron-container-home .c-jumbotron-home {
-  /* border: 1px solid red; */
-  padding: 0.5em 0;
+  padding: 1em 0;
   /* display: none; */
 }
 
 .jumbotron-container-home .img-jumbotron-home {
-  /* border: 1px solid cyan; */
   display: grid;
   place-items: center;
 }
@@ -88,7 +86,6 @@ main.template {
 }
 .c-jumbotron-home .social-media {
   position: relative;
-  /* border: 1px solid cyan; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -114,7 +111,7 @@ main.template {
 .c-jumbotron-project .card-template {
   position: inherit;
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
   display: grid;
   grid-template-columns: 250px 250px 250px;
   gap: 0.5em;
@@ -158,7 +155,6 @@ main.template {
   background-color: #fff;
   padding: 1em;
   left: 0;
-  /* border: 1px solid red; */
   width: 100%;
   transition: 0.7s cubic-bezier(0.82, -0.28, 0.23, 1.44);
 }
@@ -192,7 +188,7 @@ main.template section.jumbotron-container-home .active-content {
 }
 .skill-template {
   width: 100%;
-  height: 450px;
+  /* height: 450px; */
   display: grid;
   grid-template-columns: 250px 250px;
   grid-auto-rows: 190px;
@@ -205,7 +201,6 @@ main.template section.jumbotron-container-home .active-content {
 .skill-template .card-skill {
   width: 100%;
   height: 100%;
-  /* border: 1px solid cyan; */
   overflow: hidden;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
@@ -269,7 +264,6 @@ span.lama {
   place-items: center;
   padding: 0.4em;
   animation: loading 0.9s linear infinite;
-  /* border: 1px solid cyan; */
 }
 
 @keyframes loading {
@@ -332,10 +326,8 @@ span.lama {
   .c-jumbotron-project .card-template {
     position: inherit;
     width: 100%;
-    height: 450px;
     display: grid;
     grid-template-columns: 250px 250px;
-    gap: 0.5em;
     grid-auto-rows: 250px;
     justify-content: center;
     padding: 0.5em 0;
@@ -349,13 +341,29 @@ span.lama {
 /* MEDIA FOR media 578PX / mobile */
 
 @media screen and (max-width: 578px) {
+  main.template {
+    height: auto;
+  }
+  .jumbotron-container-home .c-jumbotron-home {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  .jumbotron-container-home {
+    height: auto;
+    padding-bottom: 2em;
+  }
   .c-jumbotron-project .card-template {
     grid-template-columns: 0.8fr;
+    gap: 1.5em;
   }
   .skill-template {
     grid-template-columns: 250px;
 
     align-content: flex-start;
+  }
+  .jumbotron-container-home .jumbotron-animate-loading {
+    height: 100vh;
   }
 }
 
@@ -375,11 +383,27 @@ span.lama {
 
 /* end MEDIA FOR media 400px / mobile */
 
-/* MEDIA FOR MAX-HEIGHT 690PX */
-
-@media screen and (max-height: 630px) {
+/* MEDIA FOR MAX-HEIGHT 690PX and 420px */
+@media screen and (max-width: 578px) and (max-height: 420px) {
+  .jumbotron-container-home .c-jumbotron-home {
+    height: auto;
+  }
+}
+@media screen and (max-width: 578px) and (max-height: 630px) {
   .jumbotron-container-home {
-    height: 700px;
+    height: auto;
+  }
+}
+/* end MEDIA FOR media 578PX / mobile */
+
+@media screen and (min-width: 568px) and (max-width: 1000px) and (max-height: 640px) {
+  .jumbotron-container-home {
+    height: 800px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-height: 640px) {
+  .jumbotron-container-home {
+    height: 750px;
   }
 }
 

@@ -12,6 +12,7 @@ let jumbotron_container_home = document.querySelector('.jumbotron-container-home
 
 function pageHome(){
     let data = ` <div class="container c-jumbotron-home container-content" data-page="home">
+    <div class="kotak-profile">
     <div class="img-jumbotron-home" aria-label="image jumbotron home">
       <div class="img-profile-jumbotron-home">
         <img src="vendor/img/img-profile.jpg" alt="img-profile" class="">
@@ -24,6 +25,7 @@ function pageHome(){
      <a href="#"> <i class="fa-brands fa-github"></i></a>
      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
     </section>
+  </div>
 </div>`
 
 return jumbotron_container_home.innerHTML = data;
@@ -124,7 +126,7 @@ function pageLoading(){
    return jumbotron_container_home.innerHTML = data_project_loading;
 }
 
-pageHome()
+pageProject()
 
 navbar_nav.addEventListener('click',function(e){
     if(e.target.classList.contains('nav-link')){
