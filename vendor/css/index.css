@@ -349,8 +349,8 @@ span.lama {
     place-items: center;
   }
   .jumbotron-container-home {
-    height: auto;
-    padding-bottom: 2em;
+    height: 100vh;
+    padding-bottom: 1em;
   }
   .c-jumbotron-project .card-template {
     grid-template-columns: 0.8fr;
@@ -388,9 +388,15 @@ span.lama {
     height: auto;
   }
 }
-@media screen and (max-width: 578px) and (max-height: 630px) {
+@media screen and (max-width: 578px) and (max-height: 900px) {
   .jumbotron-container-home {
     height: auto;
+    padding: 5em 0;
+  }
+}
+@media screen and (max-width: 578px) and (max-height: 990px) {
+  .jumbotron-container-home {
+    padding: 6em 0;
   }
 }
 /* end MEDIA FOR media 578PX / mobile */

@@ -126,8 +126,9 @@ function pageLoading(){
    return jumbotron_container_home.innerHTML = data_project_loading;
 }
 
-pageHome()
+// pageHome()
 
+pageSkill();
 navbar_nav.addEventListener('click',function(e){
     if(e.target.classList.contains('nav-link')){
         nav_item.forEach(el =>{
