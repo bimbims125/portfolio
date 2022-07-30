@@ -341,7 +341,7 @@ span.lama {
 
 @media screen and (max-width: 578px) {
   main.template {
-    height: auto;
+    height: 100vh;
   }
   .jumbotron-container-home .c-jumbotron-home {
     height: 100vh;
